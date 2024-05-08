@@ -1,0 +1,25 @@
+<div class="calculator-container">
+  <div class="calculator-screen">
+    {{ screen }}
+  </div>
+  <div class="button-container">
+    <button (click)="clear()">C</button>
+    <button (click)="handleOperationClick('/')">/</button>
+    <button (click)="handleOperationClick('*')">*</button>
+    <button (click)="backspace()"><-</button>
+    <button (click)="handleNumberClick('7')">7</button>
+    <button (click)="handleNumberClick('8')">8</button>
+    <button (click)="handleNumberClick('9')">9</button>
+    <button (click)="handleOperationClick('-')">-</button>
+    <button (click)="handleNumberClick('4')">4</button>
+    <button (click)="handleNumberClick('5')">5</button>
+    <button (click)="handleNumberClick('6')">6</button>
+    <button (click)="handleOperationClick('+')">+</button>
+    <button (click)="handleNumberClick('1')">1</button>
+    <button (click)="handleNumberClick('2')">2</button>
+    <button (click)="handleNumberClick('3')">3</button>
+    <button (click)="handleNumberClick('0')">0</button>
+    <button (click)="handleOperationClick('.')">.</button>
+    <button (click)="calculate()" class="equals">=</button>
+  </div>
+</div>
